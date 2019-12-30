@@ -1,0 +1,443 @@
+/* 탭 바(tab bar) 영역--------------------------------------------------------------------------------------- */
+.tabs{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+.tabs li{
+  display: inline-block;
+  cursor: pointer;
+  width: 33.3%;
+  background-color: #eee;
+  height: 50px;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 15px 0px;
+  box-sizing: border-box;
+}
+ul.tabs li.current{
+  background: #ededed;
+  color: #222;
+}
+.tab-content{
+  display: none;
+}
+ 
+.tab-content.current{
+  display: inherit;
+}
+
+
+/* 헤더 영역--------------------------------------------------------------------------------------- */
+/* 공통 부분----- */
+header{
+  background-color: #aaa;
+  height: 60px;
+  position: relative;
+  padding: 15px;
+  box-sizing: border-box;
+}
+header .btns{
+  float: right;
+  top: 15px;
+  right: 15px;
+  height: 30px;
+  width: 70px;
+}
+header .btns .btn_cart{
+  width: 30px;
+}
+header .btns .btn_search{
+  width: 30px;
+}
+
+/* 홈 화면 헤더 부분----- */
+div#tab-1 header h1{
+  font-size: 1.8em;
+  float: left;
+}
+div#tab-1 header .search{
+  width: 80%;
+  display: inline-block;
+}
+div#tab-1 header .search input{
+  width: 100%;
+  position: relative;
+}
+
+/* 카테고리, 마이페이지 화면 헤더 부분----- */
+div#tab-2 header h2, div#tab-3 header h2{
+  font-size: 1.1em;
+  line-height: 3.2;
+  clear: both;
+  text-align: center;
+  width: 150px;
+}
+
+
+/* 홈 화면 */
+/* 홈 화면 타이틀 영역--------------------------------------------------------------------------------------- */
+div#tab-1{
+  height: 1446px;
+}
+/* 메인 배너 부분----- */
+div#tab-1 ol{
+}
+div#tab-1 ol li{
+  max-width: 100%;
+  height: 210px;
+  text-align: center;
+  background-color: #ddd;
+}
+div#tab-1 ol li a{
+  
+}
+
+/* 내비게이션 대메뉴 부분----- */
+.nav{
+  
+}
+div#tab-1 nav ul{
+  text-align: center;
+  padding: 0;
+}
+div#tab-1 nav ul .line1{
+}
+div#tab-1 nav ul .line2{
+}
+div#tab-1 nav ul li{
+  display: inline-block;
+  width: 33%;
+}
+div#tab-1 nav ul li a{
+  display: block;
+  height: 60px;
+  border: 1px solid;
+  margin: 0px 2px 2px;
+  font-size: 0.8em;
+  line-height: 6;
+}
+/* 홈 화면 컨텐츠 영역--------------------------------------------------------------------------------------- */
+div#tab-1 .content{
+}
+/* 공통 부분----- */
+div#tab-1 .content h2{
+  text-align: center;
+  margin: 46px 0px 15px 0px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+/* 상품 목록 공통 부분----- */
+div#tab-1 .content .item{
+  
+}
+div#tab-1 .content .item ul{
+  margin-left: 15px;
+}
+div#tab-1 .content .item ul li{
+  width: 145px;
+  height: 200px;
+  background-color: #333;
+  margin-left: 15px;
+}
+
+/* 인기 상품 부분----- */
+/* .content .item .best{
+  
+}
+.content .item .best h2{
+  
+}
+.content .item .best ul{
+  
+} */
+
+/* 인기 상품 버튼 구성 부분----- */
+/* .content .item .best ul li{
+  
+}
+.content .item .best ul li a{
+  
+}
+.content .item .best ul li .name{
+  
+}
+.content .item .best ul li .name h3{
+  
+}
+.content .item .best ul li .name p{
+  
+}
+.content .item .best ul li .name b{
+  
+} */
+
+/* 신규 상품 부분----- */
+/* .content .item .new{
+  
+}
+.content .item .new h2{
+  
+}
+.content .item .new ul{
+  
+} */
+
+/* 신규 상품 버튼 구성 부분----- */
+/* .content .item .new ul li{
+  
+}
+.content .item .new ul li a{
+  
+}
+.content .item .new ul li .name{
+  
+}
+.content .item .new ul li .name h3{
+  
+}
+.content .item .new ul li .name p{
+  
+}
+.content .item .new ul li .name b{
+  
+} */
+
+/* 고객센터 부분----- */
+div#tab-1 .custserv{
+  text-align: center;
+}
+div#tab-1 .custserv>a{
+  display: inline-block;
+  left: 15px;
+  width: 60px;
+  height: 60px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+div#tab-1 .custserv>p{
+  display: inline-block;
+  max-width: 75%;
+  font-size: 0.75em;
+  text-align: left;
+  vertical-align: -2em;
+  line-height: 1.5;
+}
+/* 고객센터 하단 버튼 부분----- */
+div#tab-1 .custserv .btns{
+  margin-top: 15px;
+}
+div#tab-1 .custserv .btns a{
+  display: inline-block;
+  width: 50%;
+  padding: 20px 0px;
+  font-size: 0.8em;
+  background-color: #666
+}
+div#tab-1 .custserv .btns a+a{
+  background-color: #ccc;
+}
+div#tab-1 .custserv .btns a+a+a{
+  width: 100%;
+  background-color: #999;
+}
+/* 입금 계좌 부분----- */
+div#tab-1 .bank{
+  text-align: center;
+}
+div#tab-1 .bank h3{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+div#tab-1 .bank p{
+  font-size: 0.8em;
+  margin-bottom: 30px;
+}
+div#tab-1 .bank p+p{
+  color: red;
+}
+
+
+/* 카테고리 화면 */
+/* 카테고리 화면 컨텐츠 영역--------------------------------------------------------------------------------------- */
+div#tab-2{
+  height: 550px; 
+}
+div#tab-2 .category{
+  
+}
+div#tab-2 .category ul{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+div#tab-2 .category ul li{
+  display: inline-block;
+  vertical-align: top;
+  
+}
+div#tab-2 .category ul li h2{
+  font-size: 0.8em;
+  display: none;
+}
+div#tab-2 .category ul li ul{
+  
+}
+div#tab-2 .category ul li ul li{
+  display: block;
+  font-size: 0.8em;
+  line-height: 2.5;
+  width: 200px;
+  text-align: left;
+}
+
+/* 마이페이지 화면 */
+/* 마이페이지 화면 컨텐츠 영역--------------------------------------------------------------------------------------- */
+div#tab-3{
+  height: 700px;
+}
+div#tab-3 .mypage{
+  
+}
+
+/* 고객 프로필 부분----- */
+div#tab-3 .mypage .profile{
+  position: relative;
+  height: 80px;
+  background-color: #333;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+div#tab-3 .mypage .profile a img{
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3.4;
+}
+div#tab-3 .mypage .profile p{
+  display: inline-block;
+  color: #eee;
+  font-size: 0.7em;
+  line-height: 1.5;
+  vertical-align: top;
+  margin: 2px 10px;
+  position: relative;
+  letter-spacing: -0.5px;
+}
+div#tab-3 .mypage .profile p strong{
+  font-size: 1.5em;
+}
+div#tab-3 .mypage .profile p a{
+  display: block;
+  position: absolute;
+  font-size: 0.7em;
+  background-color: #666;
+  padding: 5px 10px;
+  color: #fff;
+  left: 0;
+  bottom: -22px;
+}
+div#tab-3 .mypage .profile a:nth-of-type(2){
+  display: block;
+  position: absolute;
+  font-size: 0.7em;
+  background-color: #666;
+  padding: 5px 10px;
+  color: #ddd;
+  right: 15px;
+  top: 10px;
+}
+
+/* 최근 본 상품 부분----- */
+div#tab-3 .mypage .viewed{
+  margin: 25px 0px 15px 15px;
+  font-size: 0.7em;
+}
+div#tab-3 .mypage .viewed h4{
+  margin-bottom: 15px;
+}
+div#tab-3 .mypage .viewed ul{
+}
+
+div#tab-3 .mypage .viewed ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+div#tab-3 .mypage .viewed ul li a{
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: #ddd;
+}
+
+/* 개인 메뉴 부분----- */
+div#tab-3 .mypage .menu{
+  height: 550px;
+}
+div#tab-3 .mypage .menu ul{
+  border-top: 2px solid #bbb;
+  border-bottom: 2px solid #bbb;
+}
+div#tab-3 .mypage .menu ul+ul{
+  margin-top: 15px;
+}
+div#tab-3 .mypage .menu ul li{
+  display: block;
+  width: 100%;
+  height: 40px;
+  font-size: 0.8em;
+  padding: 12px 0px 12px 15px;
+  box-sizing: border-box;
+}
+div#tab-3 .mypage .menu ul li+li{
+  border-top: 1px solid #ddd;
+}
+div#tab-3 .mypage .menu ul li a{
+  display: block;
+}
+
+
+
+/* 하단 영역--------------------------------------------------------------------------------------- */
+footer{
+  display: block;
+  height: 300px;
+  background-color: #555;
+  color: #aaa;
+  font-size: 0.6em;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+footer .legal, .info{
+  padding: 0px 25px;
+}
+footer .legal li{
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0px 10px 20px 0px;
+}
+footer .legal li b{
+  color: #eee;
+}
+footer .info{
+  line-height: 3;
+}
+footer>p{
+  line-height: 2;
+  color: #f07979;
+  padding: 0px 25px;
+}
+footer>p+p{
+  text-align: center;
+  color: #333;
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  padding: 5px 0px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
